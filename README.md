@@ -79,7 +79,3 @@ allure generate
 <img src="design/images/allure_2.png">
 
 </details>
-
-## Автоматическое оповещение о результатах сборки Jenkins в Telegram-бот
-
-![This is an image](design/images/tele.png)
