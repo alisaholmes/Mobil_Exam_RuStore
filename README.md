@@ -12,7 +12,7 @@
 
 
 ## Технологии и инструменты
-Проект реализован с использованием Python, PyCharm, Pytest, Appium, Android Studio, Allure Report, Jenkins, Allure TestOps.
+Проект реализован с использованием Python, PyCharm, Pytest, Appium, Android Studio, Allure Report.
 <p align="left">
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" height="40" width="40"/>
@@ -20,8 +20,7 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg" height="40" width="40"/>
 <img src="design/icons/Appium_pic.svg" height="40" width="40"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" height="40" width="40"/>
-<img src="design/icons/Allure_Report.svg" height="40" width="40"/> 
-<img src="design/icons/allure_testops.svg" height="40" width="40"/>     
+<img src="design/icons/Allure_Report.svg" height="40" width="40"/>  
      
 
 
