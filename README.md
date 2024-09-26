@@ -12,7 +12,7 @@
 
 
 ## Технологии и инструменты
-Проект реализован с использованием Python, PyCharm, Pytest, Appium, Android Studio, Allure Report, Jenkins, Allure TestOps, Telegram.
+Проект реализован с использованием Python, PyCharm, Pytest, Appium, Android Studio, Allure Report, Jenkins, Allure TestOps.
 <p align="left">
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" height="40" width="40"/>
@@ -22,7 +22,7 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" height="40" width="40"/>
 <img src="design/icons/Allure_Report.svg" height="40" width="40"/> 
 <img src="design/icons/allure_testops.svg" height="40" width="40"/>     
-<img src="design/icons/telegram.png" height="40" width="40"/>     
+     
 
 
 ## Список проверок
@@ -48,6 +48,8 @@ appium
 ![This is an image](design/images/1.png)
 
 ![This is an image](design/images/2.png)
+
+</details>
 
 ## Локальный запуск тестов и получение отчета
 
