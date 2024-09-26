@@ -48,7 +48,7 @@ appium
 
 ![This is an image](design/images/1.png)
 
-![This is an image](design/images/2.png)
+![This is an image](design/images/3.png)
 
 </details>
 
