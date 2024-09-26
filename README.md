@@ -3,10 +3,11 @@
 
 ## Содержание
 - [Технологии и инструменты](#технологии-и-инструменты)
-- [Список проверок](#cписок-проверок)
+- [Список проверок](#список-проверок)
+- [Настройка тестового стенда](#настройка-тестового-стенда)
 - [Локальный запуск тестов и получение отчета](#локальный-запуск-тестов-и-получение-отчета)
-- [Отчет о результатах тестирования в Allure-reports](#отчет-о-результатах-тестирования-в-allure-reports-)
-- [Автоматическое оповещение о результатах сборки Jenkins в Telegram-бот](#автоматическое-оповещение-о-результатах-сборки-jenkins-в-telegram-бот)
+- [Отчет в Allure-reports](#отчет-в-allure-reports)
+
 
 
 
@@ -19,8 +20,7 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original.svg" height="40" width="40"/>
 <img src="design/icons/Appium_pic.svg" height="40" width="40"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" height="40" width="40"/>
-<img src="design/icons/Allure_Report.svg" height="40" width="40"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" height="40" width="40"/>      
+<img src="design/icons/Allure_Report.svg" height="40" width="40"/> 
 <img src="design/icons/allure_testops.svg" height="40" width="40"/>     
 <img src="design/icons/telegram.png" height="40" width="40"/>     
 
@@ -31,7 +31,23 @@
 - [x] Прохождение экрана рекомендаций и настройка уведомлений "RuStore"
 - [x] Проверка информации о компании и ИНН "RuStore"
 
- 
+## Настройка тестового стенда
+
+Отдельное руководство по установке Appium, Android Studio и созданию эмулятора мобильного устройства можно найти в интернете. Ниже приведена инструкция по запуску тестового окружения для проведения локальных тестов.
+
+<details><summary>1. Запуск Appium сервера</summary>
+Для запуска Appium необходимо открыть командную строку и выполнить следующую команду:
+
+```
+appium
+```
+
+<details><summary>2. Запуск виртуального устройства</summary>
+Для того чтобы запустить виртуальное устройство, необходимо открыть Android Studio и на странице Device Manager в строке с созданным устройством нажать на кнопку "Play"
+
+![This is an image](design/images/1.png)
+
+![This is an image](design/images/2.png)
 
 ## Локальный запуск тестов и получение отчета
 
@@ -43,13 +59,13 @@ git clone git@github.com:alisaholmes/Mobil_Exam_RuStore.git
 </details>
 
 
-<details><summary>2. Создать и активировать виртуальное окружение, установить зависимости и запустить тесты</summary>
+<details><summary>2. Создать и активировать виртуальное окружение, установить зависимости и запустить тесты через эмулятор</summary>
 
 ```
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-pytest . || true
+pytest --context=local_emulator
 ```
 </details>
 
@@ -65,9 +81,9 @@ allure generate
 ```
 </details>
 
-<details><summary>4. После выполнения команды откроется браузер с отчетом</summary>
+ После выполнения команды в проекте появится папка allure-report или автоматически откроется браузер с Allure-отчетом
 
-## <img src="design/icons/Allure_Report.svg" height="40" width="40"/> Отчет в Allure report</a></a>
+## Отчет в Allure-reports
 
 <details><summary>Отчет о результатах тестирования в Allure-reports</summary>
 
@@ -79,7 +95,3 @@ allure generate
 <img src="design/images/allure_2.png">
 
 </details>
-
-## Автоматическое оповещение о результатах сборки Jenkins в Telegram-бот
-
-![This is an image](design/images/tele.png)
