@@ -3,7 +3,7 @@ import os
 from appium.options.android import UiAutomator2Options
 from dotenv import load_dotenv
 
-from utils import file
+from selene_in_action.utils import file
 
 
 def to_driver_options(context):

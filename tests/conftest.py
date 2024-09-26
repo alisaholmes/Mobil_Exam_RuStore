@@ -8,7 +8,7 @@ from selene import browser
 from selene import support
 
 import config
-from utils import attach
+from selene_in_action.utils import attach
 
 
 def pytest_addoption(parser):
