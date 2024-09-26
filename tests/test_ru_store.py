@@ -29,10 +29,15 @@ def test_recommendations():
         browser.element((AppiumBy.ID, 'ru.vk.store:id/action_bar_root')).click()
         browser.element((AppiumBy.ACCESSIBILITY_ID, 'Продолжить')).click()
     with allure.step('Выбираем чекбоксы'):
-        browser.element((AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().className('
-                                                       '"android.widget.CheckBox").instance(1)')).click()
-        browser.element((AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().className('
-                                                       '"android.widget.CheckBox").instance(2)')).click()
+        browser.element((AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().resourceId("BADGE_COMPONENT_TEST_TAG").instance(2)')).click()
+        browser.element((AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().resourceId("BADGE_COMPONENT_TEST_TAG").instance(1)')).click()
+        browser.element((AppiumBy.ANDROID_UIAUTOMATOR,
+                         'new UiSelector().resourceId("BADGE_COMPONENT_TEST_TAG").instance(0)')).click()
+        browser.element((AppiumBy.ANDROID_UIAUTOMATOR,
+                         'new UiSelector().resourceId("BADGE_COMPONENT_TEST_TAG").instance(3)')).click()
+        browser.element((AppiumBy.ANDROID_UIAUTOMATOR,
+                         'new UiSelector().resourceId("APP_ICON_COMPONENT_TEST_TAG").instance(4)')).click()
+
     with allure.step('Нажимаем "Скачать все"'):
         browser.element((AppiumBy.ANDROID_UIAUTOMATOR, 'new UiSelector().resourceId('
                                                        '"START_RECOMMENDATION_DOWNLOAD_BUTTON_TAG")')).click()
