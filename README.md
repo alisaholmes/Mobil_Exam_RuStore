@@ -133,5 +133,5 @@ allure generate
 ## Видео-пример запуска тестов на эмуляторе
 
 <p align="center">
-<img src="design/images/test.gif">
+<img src="design/images/test1.gif">
 </p>
